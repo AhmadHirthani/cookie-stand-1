@@ -1,0 +1,23 @@
+body{
+    background-color: #F4D35E;
+}
+#table{
+    margin: 4%;
+}
+ul {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 190px;
+    float: left;
+    border: 2px solid #95190C ;
+    background-color:#E5B25D;
+    margin :2px;
+    padding-bottom: 10px;
+}
+#table ul li {
+    color: #95190C;
+    width: 150px;
+    
+}
+#table ul h4{
+    color: #95190C;
+}
