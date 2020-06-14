@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@800&display=swap');
+body{
+    background-color: #F4D35E;
+}
+#title{
+    font-family: 'MuseoModerno', cursive;
+    font-size: 100px;
+    text-align:center;
+    color: #F95738;
+}
+#fish{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 50px;
+}
+#page2{
+    text-align:center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #95190C;
+}
+a{
+    text-decoration: none;
+    color: #F95738;
+}
