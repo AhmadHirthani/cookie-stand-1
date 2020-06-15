@@ -3,21 +3,24 @@ body{
 }
 #table{
     margin: 4%;
-}
-ul {
-    font-family: Arial, Helvetica, sans-serif;
-    width: 190px;
-    float: left;
     border: 2px solid #95190C ;
-    background-color:#E5B25D;
-    margin :2px;
-    padding-bottom: 10px;
+    border-collapse: collapse;
+    background-color: #E5B25D;
 }
-#table ul li {
+#table table tr td {
     color: #95190C;
-    width: 150px;
-    
+    width: 100px;
+    text-align:center;
+    border: 2px solid #95190C ;
+    height: 25px;
 }
-#table ul h4{
+#table table th{
     color: #95190C;
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
 }
+#table table tr{
+    background-color: #CB8D4B;
+}
+#table table tr:hover {background-color: #F5E960;}
+
