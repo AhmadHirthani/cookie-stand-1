@@ -1,26 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
 body{
-    background-color: #F4D35E;
+    background-color: #FDD7B9;
+    margin: 0;
 }
 #table{
     margin: 4%;
-    border: 2px solid #95190C ;
+    border: 2px solid #904C77 ;
     border-collapse: collapse;
-    background-color: #E5B25D;
+    background-color: #E49AB0;
 }
 #table table tr td {
-    color: #95190C;
+    color: #904C77;
     width: 100px;
     text-align:center;
-    border: 2px solid #95190C ;
+    border: 2px solid #904C77 ;
     height: 25px;
 }
 #table table th{
-    color: #95190C;
+    color: #904C77;
     text-align:center;
     font-family: Arial, Helvetica, sans-serif;
 }
 #table table tr{
-    background-color: #CB8D4B;
+    background-color: #FDD7B9;
 }
-#table table tr:hover {background-color: #F5E960;}
-
+#table table tr:hover {background-color: #ECC8AF;}
+#title{
+    font-family: 'MuseoModerno', cursive;
+    font-size: 20px;
+    text-align:center;
+    color: #904C77;
+}
+#fish{
+    width: 50px;
+    height: 20px;
+}
+header{
+    height: 140px;
+}
+header nav{
+    float: left;
+    background-color: #f5f5f5;
+    text-align: center;
+    border-radius: 25px;
+    margin-top: 15px;
+    margin-left: 8%;
+    width: 84%;
+    border-style: outset;
+}
+nav ul, nav h2, nav img {
+    display: inline-block;
+    margin-left: 50px;
+}
+nav ul li {
+    display: inline-block;
+     font-size: 20px;
+     margin-right: 50px;
+}
+nav ul li a{
+text-decoration: none;
+cursor: pointer;
+color: #957D95;
+font-family: 'Sriracha', cursive;}
+footer{
+    height:200px;
+    width:100%;
+    background-color: #904C77;
+}
+footer #openHours p {
+    width: 40%;
+    float: right;
+    margin-right: 10%;
+    color:#ECB8A5;
+    font-size: 25px;
+}
+footer #openHours img{
+    float: left;
+    width: 160px;
+    height: 60px;
+    margin-top: 20px;
+}
+footer #contact {
+    float: left;
+    width: 20%; 
+    margin-left:8%;
+    color: #ECB8A5;
+    font-family: 'Sriracha', cursive;
+}
+footer #contact h2 {
+    font-size: 16px;
+}
+footer #contact ul{
+    list-style-type: none;
+    font-size: 14px;
+}

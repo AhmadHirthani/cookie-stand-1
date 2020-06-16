@@ -2,13 +2,99 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cookie Stand</title>
+    <title>Pat’s Salmon Cookies</title>
     <link rel="stylesheet" href="css/style.css"><link>
 </head>
 <body>
-    <h2 id="title">Salmon Cookies</h2>
-    <img id='fish' src="imgs/salmon.png"/>
-    <h3 id="page2">Take a look at our numbers <a href="sales.html">here!</a></h3>
-    
+    <header>
+        <nav>
+            <h2 id="title">Salmon Cookies</h2>
+            <img id='fish' src="/imgs/salmon.png">
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="sales.html">Sales</a></li>
+            </ul>
+        </nav>      
+    </header>
+    <div class='greeting'>
+        <h2>Welcome to Salmon Cookies</h2>
+        <p>Do you have something on your mind? Why don't you take a look at our products?!</p>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides">
+          <img src="/imgs/family.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <img src="/imgs/fish.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <img src="/imgs/cutter.jpeg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <img src="/imgs/frosted-cookie.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <img src="/imgs/shirt.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      
+    <div style="text-align:center" id="dots">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span> 
+    </div>
+    <div id="products">
+        <ul>
+            <li>
+                <img src="/imgs/cutter.jpeg"/>
+                <h5> Check out our fish-shaped cutter</h5>                     
+            </li>
+            <li>
+                <img src="/imgs/frosted-cookie.jpg"/>
+                <h5> Check out our frosted cookie</h5>                     
+            </li>
+            <li>
+                <img src="/imgs/shirt.jpg"/>
+                <h5> Check out our Shirts!! </h5>                     
+            </li>
+            <li>
+                <img src="/imgs/fish.jpg"/>
+                <h5> Check out our Salmon Cookies!!</h5>                     
+            </li>
+           
+        </ul>
+    </div>
+    <footer>
+        <div id='contact'> 
+            <h2>Our addresses:</h2>
+            <ul>
+                <li>113 Cherry St, Seattle</li>
+                <li>15 Apple St, Tokyo</li>
+                <li>75 Pinapple St, Dubai</li>
+                <li>123 Mocha St, Paris</li>
+                <li>64 Biscuits St, Lima</li>
+            </ul>
+        </div>
+        <div id="openHours">
+           <p>
+            We are open from 6 am to 7 pm, We will be more than happy to have you.
+            Come and Try some Cookies!!
+           </p>   
+           <img src="/imgs/salmon.png">
+        </div>
+
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

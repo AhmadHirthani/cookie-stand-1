@@ -1,24 +1,146 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle; height: 500px;}
 body{
-    background-color: #F4D35E;
+    background-color: #904C77;
+    margin:0;
 }
 #title{
     font-family: 'MuseoModerno', cursive;
-    font-size: 100px;
+    font-size: 20px;
     text-align:center;
-    color: #F95738;
+    color: #904C77;
 }
 #fish{
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 50px;
+    width: 50px;
+    height: 20px;
 }
-#page2{
-    text-align:center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #95190C;
+.greeting h2,p{
+    font-family: 'Sriracha', cursive;
+    color:#ECB8A5;
+    text-align: center;
 }
-a{
+header{
+    height: 140px;
+}
+header nav{
+    float: left;
+    background-color: #ECCFC3;
+    text-align: center;
+    border-radius: 25px;
+    margin-top: 15px;
+    margin-left: 8%;
+    width: 84%;
+    border-style: outset;
+}
+nav ul, nav h2, nav img {
+    display: inline-block;
+    margin-left: 50px;
+}
+nav ul li {
+    display: inline-block;
+     font-size: 20px;
+     margin-right: 50px;
+}
+nav ul li a{
     text-decoration: none;
-    color: #F95738;
+    cursor: pointer;
+    color: #957D95;
+    font-family: 'Sriracha', cursive;}
+.slideshow-container {
+  max-width: 1100px;
+  position: relative;
+  margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #fdd7b9;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: #904C77;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+#dots{
+    margin:15px;
+}
+.active, .dot:hover {
+  background-color: #904C77;
+}
+#products ul{
+    margin:15%;
+    align-items: center;
+    border: #ECB8A5 solid 3px;
+    padding:20px;
+}
+#products ul li{
+    display: inline-block;
+    margin-right: 10px;
+    text-align:center;
+}
+#products ul li h5{
+    font-size: 20px;
+    width: 200px;
+    color: #ECB8A5;
+    font-family: monospace;
+}
+#products ul li img{
+    width: 200px;
+    height: 200px;
+}
+footer{
+    height:200px;
+    width:100%;
+    background-color: #ECB8A5;
+}
+footer #openHours p {
+    width: 40%;
+    float: right;
+    margin-right: 10%;
+    color:#904C77;
+    font-size: 25px;
+}
+footer #openHours img{
+    float: left;
+    width: 160px;
+    height: 60px;
+    margin-top: 20px;
+}
+footer #contact {
+    float: left;
+    width: 20%; 
+    margin-left:8%;
+    color: #904C77;
+    font-family: 'Sriracha', cursive;
+}
+footer #contact h2 {
+    font-size: 16px;
+}
+footer #contact ul{
+    list-style-type: none;
+    font-size: 14px;
 }
