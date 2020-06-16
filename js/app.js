@@ -1,3 +1,4 @@
+var locations = [];
 function Location (location,minCust,maxCust,avg){
     this.location=location;
     this.minCust=minCust;
@@ -14,7 +15,8 @@ function Location (location,minCust,maxCust,avg){
         }
         result.push(total);
         this['purchased']=result;
-    };   
+    };
+    locations.push(this);  
 }
 
 var seattle= new Location('Seattle',23,65,6.3);
@@ -22,7 +24,6 @@ var tokyo=new Location('Tokyo',3,24,1.2);
 var dubai= new Location('Dubai',11,38,3.7);
 var paris= new Location('Paris',20,38,2.3);
 var lima= new Location('Lima',2,16,4.6);
-var locations=[seattle,tokyo,dubai,paris,lima];
 
 seattle.purchased();
 tokyo.purchased();
@@ -59,7 +60,6 @@ var footer = function(){
     }
     table.appendChild(footer); 
 }
-
 Location.prototype.list = function(){
     var row = document.createElement('tr');
     var rowName = document.createElement('td');
@@ -72,7 +72,6 @@ Location.prototype.list = function(){
     }
     table.appendChild(row); 
 }
-
 header();
 seattle.list();
 tokyo.list();
@@ -80,10 +79,3 @@ dubai.list();
 paris.list();
 lima.list();
 footer();
-
-// list(seattle);
-// list(tokyo);
-// list(dubai);
-// list(paris);
-// list(lima);
-// console.log(table);
